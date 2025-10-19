@@ -5,55 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kho lưu trữ của NVD</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
     body {
       margin: 0;
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0e0e0;
+      font-family: 'Roboto', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      letter-spacing: 6px;
+      color: #00ffe7;
+      text-shadow: 0 0 15px #00ffe7, 0 0 30px #00ffd1;
+      text-transform: uppercase;
     }
     p {
-      font-size: 1.2em;
-      margin-bottom: 2em;
-      color: #ccc;
+      font-size: 1.3em;
+      color: #a0e9e0;
+      margin-bottom: 40px;
+      font-weight: 500;
+      text-shadow: 0 0 5px #004d4d;
+    }
+    .buttons {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 600px;
     }
     a.button {
-      display: inline-block;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      color: #000;
-      background: #fff;
-      border-radius: 8px;
+      background: linear-gradient(45deg, #00ffe7, #00a8a8);
+      padding: 18px 45px;
+      color: #011f1f;
+      font-weight: 700;
+      font-size: 1.3em;
+      border-radius: 12px;
       text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s, color 0.3s;
+      box-shadow: 0 8px 15px rgba(0, 255, 231, 0.5);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    a.button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+      transform: translateY(-50%) skewX(-20deg);
+      transition: left 0.7s ease;
+      pointer-events: none;
+    }
+    a.button:hover::before {
+      left: 100%;
     }
     a.button:hover {
-      background: #444;
-      color: #fff;
+      color: #004d4d;
+      box-shadow: 0 0 25px #00ffe7, 0 0 40px #00ffe7;
+      transform: scale(1.05);
     }
     footer {
-      margin-top: 3em;
+      margin-top: 60px;
       font-size: 0.9em;
-      color: #555;
+      color: #3ce1e7;
+      text-shadow: 0 0 10px #004d4d;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.3em;
+      }
+      .buttons {
+        flex-direction: column;
+        gap: 20px;
+      }
+      a.button {
+        padding: 15px 30px;
+        font-size: 1.1em;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Kho lưu trữ của NVD</h1>
-  <p>Chào mừng bạn đến với trang kho lưu trữ cá nhân của tôi.</p>
-  <a href="https://mega.nz/folder/zdJigYxQ#l5HxzqbOOXjs2T0pWJyxAw" target="_blank" class="button">kho lưu trữ 1</a>
-  <a href="https://mega.nz/folder/WAsQyCDb#G6znmjpNPiTJVpttKygeRQ" target="_blank" class="button">kho lưu trữ 2</a>
+  <p>Chào mừng bạn đến với kho lưu trữ dữ liệu cá nhân đầy mạnh mẽ và hiện đại.</p>
+  <div class="buttons">
+    <a href="https://mega.nz/folder/zdJigYxQ#l5HxzqbOOXjs2T0pWJyxAw" target="_blank" class="button">Kho lưu trữ 1</a>
+    <a href="https://mega.nz/folder/WAsQyCDb#G6znmjpNPiTJVpttKygeRQ" target="_blank" class="button">Kho lưu trữ 2</a>
+  </div>
   <footer>&copy; 2025 NVD</footer>
 </body>
 </html>
