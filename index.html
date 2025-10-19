@@ -1,56 +1,114 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Lưu Trữ File Cá Nhân</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        .file-list {
-            margin: 20px 0;
-        }
-        .file-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        .file-item a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kho lưu trữ của NVD</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      width: 90%;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      margin-top: 40px;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 4px #3a0ca3;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #d1d1ff;
+      text-shadow: 1px 1px 3px #220e78;
+    }
+    .section-title {
+      font-size: 1.8em;
+      font-weight: 600;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #8e2de2;
+      padding-bottom: 8px;
+      text-align: center;
+      text-shadow: 1px 1px 2px #2b047b;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    li {
+      background: #5a3fbe;
+      margin: 12px 0;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+      cursor: default;
+    }
+    li:hover {
+      background: #7b56ff;
+      box-shadow: 0 4px 15px rgba(123, 86, 255, 0.7);
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #bbb;
+      font-size: 0.9em;
+      font-style: italic;
+      text-shadow: 1px 1px 2px #1b0a56;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 25px;
+      }
+      h1 {
+        font-size: 2.2em;
+      }
+      p, li {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Danh Sách File Cá Nhân</h1>
-        <div class="file-list">
-            <div class="file-item">
-                <span>File Ví Dụ 1</span>
-                <a href="#">Tải về</a>
-            </div>
-            <div class="file-item">
-                <span>File Ví Dụ 2</span>
-                <a href="#">Tải về</a>
-            </div>
-        </div>
+  <div class="container">
+    <h1>Kho lưu trữ của NVD</h1>
+    <p>Chào mừng bạn đến với kho lưu trữ cá nhân của NVD - nơi lưu giữ những dự án, tài liệu và tác phẩm yêu thích.</p>
+
+    <div class="section">
+      <h2 class="section-title">Danh sách kho lưu trữ</h2>
+      <ul>
+        <li>Dự án Web cá nhân</li>
+        <li>Tài liệu học tập</li>
+        <li>Ứng dụng tiện ích</li>
+        <li>Thư viện mã nguồn mở</li>
+        <li>Tài nguyên lập trình</li>
+      </ul>
     </div>
+
+    <footer>
+      &copy; 2025 NVD. Bản quyền thuộc về NVD.
+    </footer>
+  </div>
 </body>
 </html>
