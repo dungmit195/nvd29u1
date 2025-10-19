@@ -13,15 +13,26 @@
         url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1470&q=80')
         no-repeat center center fixed;
       background-size: cover;
-      color: #e0e0e0;
       font-family: 'Roboto', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .screen {
+      background: rgba(10, 10, 10, 0.85);
+      max-width: 900px;
+      width: 90vw;
+      padding: 40px 60px;
+      border-radius: 25px;
+      box-shadow: 0 0 50px 15px rgba(0, 255, 231, 0.5);
+      backdrop-filter: blur(8px);
+      color: #e0e0e0;
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 40px 20px;
     }
     h1 {
       font-family: 'Orbitron', sans-serif;
@@ -38,13 +49,15 @@
       margin-bottom: 40px;
       font-weight: 500;
       text-shadow: 0 0 5px #004d4d;
+      max-width: 700px;
     }
     .buttons {
       display: flex;
       gap: 30px;
       flex-wrap: wrap;
       justify-content: center;
-      max-width: 600px;
+      max-width: 700px;
+      width: 100%;
     }
     a.button {
       background: linear-gradient(45deg, #00ffe7, #00a8a8);
@@ -60,6 +73,9 @@
       overflow: hidden;
       letter-spacing: 1.5px;
       text-transform: uppercase;
+      flex-grow: 1;
+      flex-basis: 150px;
+      text-align: center;
     }
     a.button::before {
       content: "";
@@ -101,17 +117,23 @@
       a.button {
         padding: 15px 30px;
         font-size: 1.1em;
+        flex-basis: auto;
+      }
+      .screen {
+        padding: 20px 25px;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Kho lưu trữ của NVD</h1>
-  <p>Chào mừng bạn đến với kho lưu trữ dữ liệu cá nhân đầy mạnh mẽ và hiện đại.</p>
-  <div class="buttons">
-    <a href="https://mega.nz/folder/zdJigYxQ#l5HxzqbOOXjs2T0pWJyxAw" target="_blank" class="button">Kho lưu trữ 1</a>
-    <a href="https://mega.nz/folder/WAsQyCDb#G6znmjpNPiTJVpttKygeRQ" target="_blank" class="button">Kho lưu trữ 2</a>
+  <div class="screen">
+    <h1>Kho lưu trữ của NVD</h1>
+    <p>Chào mừng bạn đến với kho lưu trữ dữ liệu cá nhân đầy mạnh mẽ và hiện đại.</p>
+    <div class="buttons">
+      <a href="https://mega.nz/folder/zdJigYxQ#l5HxzqbOOXjs2T0pWJyxAw" target="_blank" class="button">Kho lưu trữ 1</a>
+      <a href="https://mega.nz/folder/WAsQyCDb#G6znmjpNPiTJVpttKygeRQ" target="_blank" class="button">Kho lưu trữ 2</a>
+    </div>
+    <footer>&copy; 2025 NVD</footer>
   </div>
-  <footer>&copy; 2025 NVD</footer>
 </body>
 </html>
